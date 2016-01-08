@@ -7,8 +7,20 @@
     version="2.0">
    
     <managed-bean>
-    	<managed-bean-name>userBean</managed-bean-name>
-    	<managed-bean-class>com.simple.jsf.bean.UserBean</managed-bean-class>
+    	<managed-bean-name>user</managed-bean-name>
+    	<managed-bean-class>com.simple.jsf.model.User</managed-bean-class>
+    	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+    	<managed-bean-name>customer</managed-bean-name>
+    	<managed-bean-class>com.simple.jsf.model.Customer</managed-bean-class>
+    	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+    	<managed-bean-name>customerBean</managed-bean-name>
+    	<managed-bean-class>com.simple.jsf.bean.CustomerBean</managed-bean-class>
     	<managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     
@@ -26,10 +38,11 @@
     	<display-name>AddUser</display-name>
     	<from-view-id>/AddUser.jsp</from-view-id>
     	<navigation-case>
-    		<from-action>#{userBean.addUser}</from-action>
+    		<from-action>#{user.addUser}</from-action>
     		<from-outcome>success</from-outcome>
     		<to-view-id>/ListUser.jsp</to-view-id>
-    	</navigation-case>
+    	</navigation-case>    	    	
     </navigation-rule>
     
+      
 </faces-config>

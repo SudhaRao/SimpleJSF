@@ -8,7 +8,7 @@
 <body>
 <f:view>
     <h:form>
-        <h:outputText value="User #{userBean.name} is added successfully."></h:outputText>
+        <h:outputText value="User #{user.name} is added successfully."></h:outputText>
     </h:form>
 </f:view>
 </body>
