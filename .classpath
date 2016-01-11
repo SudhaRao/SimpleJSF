@@ -21,6 +21,5 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="lib/db2jcc_license_cu.jar"/>
 	<classpathentry kind="lib" path="lib/db2jcc.jar"/>
-	<classpathentry kind="src" path="/DBUtility"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>

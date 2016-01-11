@@ -3,7 +3,6 @@
 	<name>SimpleJSF</name>
 	<comment></comment>
 	<projects>
-		<project>DBUtility</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
