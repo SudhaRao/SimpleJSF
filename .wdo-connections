@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections:connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connections="http://www.ibm.com/websphere/wdo/connections">
+  <connection id="CRMSNAP">
+    <development xsi:type="connections:rsc-live-connection" id="CRMSNAP_dev" name="CRMSNAP"/>
+    <runtime xsi:type="connections:datasource-connection" auto-deploy="true" class-location="C:\IBM\SDPShared\plugins\com.ibm.datatools.db2_2.2.200.v20140920_2202\driver\db2jcc.jar;C:\IBM\SDPShared\plugins\com.ibm.datatools.db2_2.2.200.v20140920_2202\driver\db2jcc_license_cisuz.jar" id="CRMSNAP_runtime" classname="com.ibm.db2.jcc.DB2ConnectionPoolDataSource" database-name="CRM" jndi-name="jdbc/CRMSNAP" port-number="50010" resource-reference-name="CRMSNAP" server-name="nfdbw2" sql-vendor-type="-1" userid="web"/>
+  </connection>
+</connections:connections>

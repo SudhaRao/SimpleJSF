@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+     
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"> 
+      
+  
+<h:head>
+    <title>Customer</title>
+    
+    
+    
+</h:head>
+	<h:body>
+ 		<f:view>
+    	<h:dataTable id="customerTable" value="#{customerBean.getCustomerList()}" var="c" styleClass="cust-table"
+    			headerClass="cust-table-header"
+    			rowClasses="cust-table-odd-row,cust-table-even-row" rendered="true" >
+ 
+    		<h:column id="col1">
+    			<f:facet name="header"><h:outputText value="Customer ID" /></f:facet>
+    			<h:outputText value="#{c.customerId}" id="customerid"/>	
+    		</h:column>
+ 
+    		<h:column id="col2">
+    			<f:facet name="header"><h:outputText value="Name" /></f:facet>
+    				<h:outputText value="#{c.customerName}" id="customername"/>
+    		</h:column>
+ 
+ 			<h:column id="col3">
+    			<f:facet name="header"><h:outputText value="Address" /></f:facet>
+    				<h:outputText value="#{c.customerAddress}" id="customerAddr"/>
+    		</h:column>
+    		
+    		<h:column id="col4">
+    			<f:facet name="header"><h:outputText value="Created Date"/></f:facet>
+    				<h:outputText value="#{c.createdDate}"  id="customerCreateDate"/>
+    		</h:column>
+    		
+    	</h:dataTable>
+ 		</f:view>
+    </h:body>
+ 
+</html>
